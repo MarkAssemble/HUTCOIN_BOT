@@ -13,6 +13,8 @@ async def send_welcome_message(update: Update, context: ContextTypes.DEFAULT_TYP
 This is the **HUTTCOIN Community**.
 HUTTCOIN is a coin that values absurdity and fun.
 
+💼 CA : 
+
 ✅ Available commands:
 - /start : View the welcome message 👋
 - /chart : View HUTTCOIN price chart 📈
@@ -68,9 +70,9 @@ async def handle_group_command(update: Update, context: ContextTypes.DEFAULT_TYP
     if text == "/chart":
         await update.message.reply_text("📈 HUTTCOIN Chart: https://huttcoin.com/chart")
     elif text == "/x":
-        await update.message.reply_text("🔍 Latest HUTTCOIN Info: https://huttcoin.com/info")
+        await update.message.reply_text("🔍 Latest HUTTCOIN Info: https://https://x.com/huttcoin")
     elif text == "/homepage":
-        await update.message.reply_text("🌐 Official Website: https://huttcoin.netlify.app")
+        await update.message.reply_text("🌐 Official Website: https://huttcoin.com")
     elif text == "/start":
         await send_welcome_message(update, context)
     else:
