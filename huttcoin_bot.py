@@ -13,7 +13,7 @@ async def send_welcome_message(update: Update, context: ContextTypes.DEFAULT_TYP
 This is the **HUTTCOIN Community**.
 HUTTCOIN is a coin that values absurdity and fun.
 
-💼 CA : 
+💼 CA : 9QNWgfQnteoVN7Mjk3xq5PxdXDVhWxFo1XSniUcRpump
 
 ✅ Available commands:
 - /start : View the welcome message 👋
@@ -37,7 +37,7 @@ Try using /chart, /x, or /homepage to explore more! 🚀"""
 
 # Command handlers
 async def chart(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("📈 HUTTCOIN Chart: https://huttcoin.com/chart")
+    await update.message.reply_text("📈 HUTTCOIN Chart: https://pump.fun/coin/9QNWgfQnteoVN7Mjk3xq5PxdXDVhWxFo1XSniUcRpump")
 
 async def x(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text("🔍 Latest HUTTCOIN Info: https://x.com/huttcoin")
@@ -52,7 +52,7 @@ async def handle_channel_command(update: Update, context: ContextTypes.DEFAULT_T
         print(f"✅ Channel command received: {text}")
 
         if text.startswith('/chart'):
-            await update.channel_post.reply_text("📈 HUTTCOIN Chart: https://huttcoin.com/chart")
+            await update.channel_post.reply_text("📈 HUTTCOIN Chart: https://pump.fun/coin/9QNWgfQnteoVN7Mjk3xq5PxdXDVhWxFo1XSniUcRpump")
         elif text.startswith('/x'):
             await update.channel_post.reply_text("🔍 Latest HUTTCOIN Info: https://huttcoin.com/info")
         elif text.startswith('/homepage'):
